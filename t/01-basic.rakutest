@@ -1,0 +1,6 @@
+use Test;
+use PDF::FontCollection;
+
+pass "replace me";
+
+done-testing;
