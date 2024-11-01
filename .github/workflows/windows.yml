@@ -26,6 +26,8 @@ jobs:
       - name: Install Dependencies
         run: |
             choco install rakudostar
+            choco install wget
+            choco install font-freefont
             zef --exclude="z" install --debug --/test --test-depends --deps-only .
       - name: Run Tests
-        run: zef install . --debug
+        run: zef install .
