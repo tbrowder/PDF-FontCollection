@@ -1,0 +1,11 @@
+#!/usr/bin/env raku
+
+use PDF::FontCollection;
+
+if not @*ARGS.elems {
+    help()
+}
+else {
+    use-args @*ARGS
+}
+

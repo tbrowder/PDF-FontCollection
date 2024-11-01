@@ -53,7 +53,9 @@ several of the fonts:
 =item f1ob -  FreeSerifBoldItalic
 
 Notes:
+
 1. The base font is also the name of the font family.
+
 2. The style characters can be in any order, and the 
 'i' (italic) and 'o' (oblique) mean the same in this context.
 
