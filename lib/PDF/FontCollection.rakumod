@@ -1,3 +1,3 @@
-unit class PDF::FontCollection;
+unit module PDF::FontCollection;
 
 

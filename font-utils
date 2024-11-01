@@ -1,0 +1,11 @@
+#!/usr/bin/env raku
+
+use Font::Utils;
+
+if not @*ARGS.elems {
+    help()
+}
+else {
+    use-args @*ARGS
+}
+

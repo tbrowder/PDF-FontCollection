@@ -1,0 +1,34 @@
+My font collections should have the same
+structure:
+
+  PDF::FreeFonts
+  PDF::URW-Fonts
+  PDF::MyFonts   # user selected, plus EBGaramond?
+
+# generate files from a hash-like input list
+# create the list automatically from a file list
+# (see FontFactory's dev/show-font-info.raku)
+# using a class with all the vars wanted:
+# 
+multi sub get-ff-font(UInt $num
+multi sub get-ff-font(Str $code            # or code2
+multi sub load-ff-font(UInt $num, :$pdf!
+multi sub load-ff-font(Str $code, :$pdf!   # or code2
+
+multi sub get-urw-font(UInt $num
+multi sub get-urw-font(Str $code
+multi sub load-urw-font(UInt $num, :$pdf!
+multi sub load-urw-font(Str $code, :$pdf!
+
+# user selected
+multi sub get-my-font(UInt $num
+multi sub get-my-font(Str $code
+multi sub load-my-font(UInt $num, :$pdf!
+multi sub load-my-font(Str $code, :$pdf!
+
+Based on OS, define necessary stuff in a JSON file in an
+appropriate hidden directory in the user's $HOME directory. 
+That file should be keyed by a unique number.
+
+The MyFonts should be the only one to be modified by the
+user, but its format should be basically the same.
